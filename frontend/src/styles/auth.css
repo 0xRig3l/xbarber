@@ -1,0 +1,157 @@
+.auth-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  padding: 1rem;
+}
+
+.auth-card {
+  width: 100%;
+  max-width: 420px;
+  padding: 2.5rem;
+  border-radius: 1rem;
+  background: #232225;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+}
+
+.auth-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.auth-title {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+  letter-spacing: -0.5px;
+}
+
+.auth-subtitle {
+  margin: 0;
+  color: #aaa;
+  font-size: 1rem;
+}
+
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.auth-label {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  color: #ccc;
+  font-size: 0.875rem;
+}
+
+.auth-input {
+  padding: 0.75rem;
+  border: 1px solid #555;
+  border-radius: 0.5rem;
+  color: #fff;
+  background: #19181b;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.auth-input:focus {
+  outline: none;
+  border-color: #b8952e;
+}
+
+.auth-input::placeholder {
+  color: #666;
+}
+
+.auth-error {
+  margin: 0;
+  padding: 0.625rem 0.875rem;
+  border-radius: 0.5rem;
+  color: #ff9b9b;
+  background: rgba(255, 155, 155, 0.08);
+  font-size: 0.875rem;
+}
+
+.auth-button {
+  padding: 0.875rem;
+  border: 0;
+  border-radius: 0.5rem;
+  color: #fff;
+  font-size: 1rem;
+  font-weight: bold;
+  background: #b8952e;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.auth-button:hover:not(:disabled) {
+  opacity: 0.9;
+}
+
+.auth-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.auth-toggle {
+  margin: 1.5rem 0 0;
+  text-align: center;
+  color: #aaa;
+  font-size: 0.875rem;
+}
+
+.auth-toggle-button {
+  padding: 0;
+  border: 0;
+  color: #b8952e;
+  background: none;
+  font: inherit;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.auth-toggle-button:hover {
+  opacity: 0.85;
+}
+
+/* Top bar with user info and logout */
+.topbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 1.25rem 2rem 0;
+}
+
+.topbar__greeting {
+  margin: 0;
+  color: #ccc;
+  font-size: 0.9375rem;
+}
+
+.topbar__greeting strong {
+  color: #fff;
+}
+
+.topbar__logout {
+  padding: 0.5rem 1rem;
+  border: 1px solid #555;
+  border-radius: 0.5rem;
+  color: #ccc;
+  background: transparent;
+  font-size: 0.8125rem;
+  cursor: pointer;
+  transition:
+    border-color 0.2s,
+    color 0.2s;
+}
+
+.topbar__logout:hover {
+  border-color: #b8952e;
+  color: #b8952e;
+}
